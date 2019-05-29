@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quectel.quectel_gps.GPS_cold">
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="1dp"
+        android:layout_y="53dp"
+        android:background="@android:color/holo_blue_light"
+        android:orientation="vertical"
+        android:showDividers="beginning|middle|end"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end">
+
+            <TextView
+                android:layout_width="1dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="left"
+                android:padding="8dp"
+                android:text="测试名称：" />
+
+            <TextView
+                android:text="GPS 冷启动"
+                android:layout_width="1dp"
+                android:gravity="left"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end">
+
+            <TextView
+                android:layout_width="1dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="left"
+                android:padding="8dp"
+                android:text="测试已进行总时间：" />
+
+            <TextView
+                android:id="@+id/tv_total_time"
+
+                android:layout_width="1dp"
+                android:gravity="left"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end">
+
+            <TextView
+                android:layout_width="1dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="left"
+                android:padding="8dp"
+                android:text="定位用时：" />
+
+            <TextView
+                android:id="@+id/tv_used_time"
+
+                android:layout_width="1dp"
+                android:gravity="left"
+                android:padding="8dp" />
+        </TableRow>
+
+
+        <TableRow
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end">
+
+            <TextView
+                android:layout_width="1dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="left"
+                android:padding="8dp"
+                android:text="经纬度：" />
+
+            <TextView
+                android:id="@+id/tv_position"
+                android:layout_width="1dp"
+                android:gravity="left"
+                android:padding="8dp" />
+        </TableRow>
+
+
+        <TableRow
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end">
+
+            <TextView
+                android:layout_width="1dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="left"
+                android:padding="8dp"
+                android:text="测试次数" />
+
+            <TextView
+                android:id="@+id/tv_times"
+                android:layout_width="1dp"
+                android:gravity="left"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end">
+
+            <TextView
+                android:layout_width="1dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="left"
+                android:padding="8dp"
+                android:text="定位失败次数(超过180s)：" />
+
+            <TextView
+                android:id="@+id/tv_timeout"
+                android:layout_width="1dp"
+                android:gravity="left"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end">
+
+            <TextView
+                android:layout_width="1dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="left"
+                android:padding="8dp"
+                android:text="搜索到卫星数：" />
+
+            <TextView
+                android:id="@+id/tv_satellite"
+                android:layout_width="1dp"
+                android:gravity="left"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end">
+
+            <TextView
+                android:layout_width="1dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="left"
+                android:padding="8dp"
+                android:text="搜索到卫星信噪比1：" />
+
+            <TextView
+                android:id="@+id/tv_ratio1"
+                android:layout_width="1dp"
+                android:gravity="left"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end">
+
+            <TextView
+                android:layout_width="1dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="left"
+                android:padding="8dp"
+                android:text="搜索到卫星信噪比2：" />
+
+            <TextView
+                android:id="@+id/tv_ratio2"
+                android:layout_width="1dp"
+                android:gravity="left"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end">
+
+            <TextView
+                android:layout_width="1dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="left"
+                android:padding="8dp"
+                android:text="搜索到卫星信噪比3：" />
+
+            <TextView
+                android:id="@+id/tv_ratio3"
+                android:layout_width="1dp"
+                android:gravity="left"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end">
+
+            <TextView
+                android:layout_width="1dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="left"
+                android:padding="8dp"
+                android:text="Nema Info：" />
+
+            <TextView
+                android:id="@+id/tv_nema"
+                android:layout_width="1dp"
+                android:gravity="left"
+                android:padding="8dp" />
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>
